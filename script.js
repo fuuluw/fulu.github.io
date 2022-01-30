@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["BSc in Mathemaical science graduate", "Statistics graduate", "Computer Science graduate"],
+        strings: ["BSc in Mathematical science graduate", "Statistics graduate", "Computer Science graduate"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["BSc in Mathemaical science graduate", "Statistics graduate", "Computer Science graduate"],
+        strings: ["BSc in Mathematical science graduate", "Statistics graduate", "Computer Science graduate"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
