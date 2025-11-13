@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["BSc in Mathematical science graduate", "Statistics graduate", "Computer Science graduate"],
+        strings: ["Intelligent Automation Analyst", "Data Analyst", "Project based Data Scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["BSc in Mathematical science graduate", "Statistics graduate", "Computer Science graduate"],
+        strings: ["Intelligent Automation Analyst", "Data Analyst", "Project based Data Scientist"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -70,4 +70,22 @@ $(document).ready(function(){
             }
         }
     });
+});
+window.addEventListener("scroll", function() {
+  const section = document.querySelector(".projects");
+  const position = section.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.3;
+
+  if (position < screenPosition) {
+    section.classList.add("active");
+  }
+});
+window.addEventListener("scroll", function() {
+  const achievements = document.querySelector(".achievements");
+  const position = achievements.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.3;
+
+  if (position < screenPosition) {
+    achievements.classList.add("active");
+  }
 });
