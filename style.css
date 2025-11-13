@@ -364,25 +364,49 @@ section .title::after{
     background: #A41B4F;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 95%;
 }
 .skills-content .right .css::before{
-    width: 90%;
+    width: 95%;
 }
 .skills-content .right .js::before{
-    width: 75%;
+    width: 85%;
 }
 .skills-content .right .py::before{
-    width: 70%;
+    width: 90%;
 }
 .skills-content .right .cSharp::before{
-    width: 60%;
+    width: 70%;
 }
 .skills-content .right .cPlus::before{
     width: 60%;
 }
 .skills-content .right .java::before{
-    width: 30%;
+    width: 60%;
+}
+.skills-content .right .pbi::before{
+    width: 95%;
+}
+.skills-content .right .qliksense::before{
+    width: 95%;
+}
+.skills-content .right .pylibra::before{
+    width: 95%;
+}
+.skills-content .right .sap::before{
+    width: 80%;
+}
+.skills-content .right .sql::before{
+    width: 80%;
+}
+.skills-content .right .uipath::before{
+    width: 80%;
+}
+.skills-content .right .visio::before{
+    width: 98%;
+}
+.skills-content .right .jira::before{
+    width: 90%;
 }
 
 /* certification section styling 
@@ -684,4 +708,82 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+/* projects section styling */
+.projects {
+    background: #f9f9f9;
+    color: #111;
+}
+
+.projects .title::before {
+    background: #111;
+}
+
+.projects .title::after {
+    content: "what I've built";
+    background: #f9f9f9;
+}
+
+.projects .projects-content {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.projects .projects-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+.projects {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.projects.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* achievements section styling */
+.achievements {
+    background: #111; /* black background */
+    color: #fff;
+    padding: 80px 0;
+}
+
+.achievements .title::before {
+    background: #fff;
+}
+
+.achievements .title::after {
+    content: "my milestones";
+    background: #111;
+    color: #aaa;
+}
+
+.achievements .achievements-content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.achievements .achievements-content ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    text-align: left;
+}
+
+.achievements .achievements-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.achievements .achievements-content li:hover {
+    color: #fff;
 }
